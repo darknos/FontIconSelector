@@ -1,0 +1,15 @@
+<Alloy>
+	<NavigationWindow>
+		<Window class="container" navBarHidden="false" title="IconSelector">
+			<ScrollView layout="horizontal" >
+				<Require src="IconList" type="view" font="FontAwesome"/>
+				<Require src="IconList" type="view" font="StrokeSeven"/>
+				<Require src="IconList" type="view" font="Typicons"/>
+				<Require src="IconList" type="view" font="Glyphs"/>
+				<Require src="IconList" type="view" font="Octicons"/>
+				<Require src="IconList" type="view" font="LigatureSymbols"/>
+				<Require src="IconList" type="view" font="Entypo"/>
+			</ScrollView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

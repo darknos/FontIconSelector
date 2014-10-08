@@ -1,0 +1,25 @@
+<Alloy>
+	<Collection src="CharacterMap" instance="true" id="list"/>
+	<View class="container" width="246" bottom=0 top=0>
+		<Popover height='150' width='300' id="popover">
+			<ContentView>
+				<NavigationWindow>
+					<Window title="Result" top="0" bottom="0">
+						<TextArea id="text" left="11" top="11" bottom="11" right="11"></TextArea>
+					</Window>
+				</NavigationWindow>
+			</ContentView>
+		</Popover>
+		<ListView defaultItemTemplate="Ti.UI.LIST_ITEM_TEMPLATE_SETTINGS" onItemclick="openItem">
+			<SearchBar/>
+			<ListSection id="section"></ListSection>
+		</ListView>
+	</View>
+	<OptionDialog id="dialog" title="Copy to clipboard" onClick="copyToClipboard">
+		<Options>
+			<Option>Label TSS</Option>
+			<Option>ip.ui.iconbutton</Option>
+			<Option>nl.fokkezb.button</Option>
+		</Options>
+	</OptionDialog>
+</Alloy>
